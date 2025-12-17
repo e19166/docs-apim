@@ -42,7 +42,7 @@
 }
 
 .md-home-search-input-label {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.2em;
 }
 
 .md-home-search-input-description {
@@ -52,8 +52,13 @@
 }
 
 .md-home-sections {
-    max-width: var(--md-main-content-max-width);
     margin-bottom: 5rem !important;
+}
+
+/* Reduce spacing between the two paragraphs on the home description section */
+.description-section .leftContent p {
+    margin-top: 0.01em;
+    margin-bottom: 0.01em;
 }
 
 .md-column-grid {
@@ -61,13 +66,14 @@
     display: flex;
     align-items: start;
     justify-content: space-between;
+    flex-wrap: wrap; /* allow cards to wrap to a second row */
 }
 
 .md-grid-column {
-    width: 32%;
+    width: 31%; /* roughly 3 columns per row */
     display: inline-block;
     vertical-align: top;
-    margin: 20px;
+    margin: 12px 0; /* slimmer margins to fit three columns */
 }
 
 .md-grid-column:last-child {
